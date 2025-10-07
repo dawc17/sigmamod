@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> BLUE_STEEL = ITEMS.register("blue_steel",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_BLUE_STEEL = ITEMS.register("raw_blue_steel",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

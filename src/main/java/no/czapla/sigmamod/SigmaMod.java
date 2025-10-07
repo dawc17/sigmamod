@@ -1,6 +1,7 @@
 package no.czapla.sigmamod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import no.czapla.sigmamod.block.ModBlocks;
 import no.czapla.sigmamod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,6 +32,7 @@ public class SigmaMod {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -50,8 +52,17 @@ public class SigmaMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLUE_STEEL);
+            event.accept(ModItems.RAW_BLUE_STEEL);
+        }
+
+        if (event.getTabKey()  == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BLUE_STEEL_BLOCK);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.BLUE_STEEL_ORE);
         }
     }
 

@@ -1,3 +1,7 @@
 {
-  "item.czaplasigmamod.blue_steel": "Blue Steel"
+  "item.czaplasigmamod.blue_steel": "Blue Steel",
+  "item.czaplasigmamod.raw_blue_steel": "Raw Blue Steel",
+
+  "block.czaplasigmamod.blue_steel_ore": "Blue Steel Ore",
+  "block.czaplasigmamod.blue_steel_block": "Block of Blue Steel"
 }
