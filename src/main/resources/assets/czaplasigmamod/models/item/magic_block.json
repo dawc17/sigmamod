@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "czaplasigmamod:item/magic_block"
-  }
+  "parent": "czaplasigmamod:block/magic_block"
 }
