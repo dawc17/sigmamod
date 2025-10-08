@@ -11,5 +11,14 @@
 
   "creativetab.czaplasigmamod.blue_steel_items": "Blue Steel Items",
   "creativetab.czaplasigmamod.blue_steel_blocks": "Blue Steel Blocks",
-  "creativetab.czaplasigmamod.sigma_mod": "Sigma Mod"
+  "creativetab.czaplasigmamod.sigma_mod": "Sigma Mod",
+
+  "tooltip.czaplasigmamod.magic_block.shift_down": "This block is imbued with §9magical§r properties.",
+  "tooltip.czaplasigmamod.magic_block": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.oil_can.shift_down": "Used to smelt items for a looong time.",
+  "tooltip.czaplasigmamod.oil_can": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.chisel.shift_down": "This item can chisel blocks into other blocks.",
+  "tooltip.czaplasigmamod.chisel": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.durian.shift_down": "Smells like hell, but tastes like heaven. Small chance of poisoning.",
+  "tooltip.czaplasigmamod.durian": "Hold §eSHIFT§r for more information."
 }
