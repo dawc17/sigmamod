@@ -2,6 +2,7 @@ package no.czapla.sigmamod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import no.czapla.sigmamod.block.ModBlocks;
+import no.czapla.sigmamod.item.ModCreativeModeTabs;
 import no.czapla.sigmamod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,13 +32,15 @@ public class SigmaMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
-
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -63,6 +66,10 @@ public class SigmaMod {
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.BLUE_STEEL_ORE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CHISEL);
         }
     }
 
