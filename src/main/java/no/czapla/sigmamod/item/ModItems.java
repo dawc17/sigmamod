@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import no.czapla.sigmamod.SigmaMod;
 import no.czapla.sigmamod.item.custom.ChiselItem;
+import no.czapla.sigmamod.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SigmaMod.MOD_ID);
@@ -21,6 +22,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> DURIAN = ITEMS.register("durian",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DURIAN)));
+
+    public static final DeferredItem<Item> OIL_CAN = ITEMS.register("oil_can",
+            () -> new FuelItem(new Item.Properties(), 2500));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
