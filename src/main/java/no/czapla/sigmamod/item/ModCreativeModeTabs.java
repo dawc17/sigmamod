@@ -35,6 +35,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> SIGMA_FOOD_TAB = CREATIVE_MODE_TAB.register("sigma_food_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DURIAN.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SigmaMod.MOD_ID, "blue_steel_blocks_tab"))
+                    .title(Component.translatable("creativetab.czaplasigmamod.sigma_food"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModItems.DURIAN);
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
