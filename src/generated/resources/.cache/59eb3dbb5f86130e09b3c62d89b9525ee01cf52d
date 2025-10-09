@@ -1,4 +1,12 @@
-// 1.21.1	2025-10-08T23:54:26.6729105	Loot Tables
+// 1.21.1	2025-10-10T00:32:55.5018455	Loot Tables
 0d01f891f8b969c55c0d3100a3d3d5c20a4c20da data/czaplasigmamod/loot_table/blocks/blue_steel_block.json
+3095c8f88053e293709cae54c65d58013d4af10d data/czaplasigmamod/loot_table/blocks/blue_steel_button.json
+3310c07214a02c1bac90f912e38377d4b5cc4e92 data/czaplasigmamod/loot_table/blocks/blue_steel_door.json
+1572750d787f0a3294fd02f2a86413c4e7622587 data/czaplasigmamod/loot_table/blocks/blue_steel_fence.json
+20a6ef76ac57fa0d922b343d38470a2b029c488f data/czaplasigmamod/loot_table/blocks/blue_steel_fence_gate.json
 80f922c3800864040a93652e27701e75d19d9527 data/czaplasigmamod/loot_table/blocks/blue_steel_ore.json
+a1e503c2396e73968132d6ed8699bb5075f5b9b8 data/czaplasigmamod/loot_table/blocks/blue_steel_pressure_plate.json
+8cf1fc76ed81a121ff4d6220fd863bf91745cad8 data/czaplasigmamod/loot_table/blocks/blue_steel_slab.json
+f9fc5a8f5189cdd2cd47f3b534ca74728409286b data/czaplasigmamod/loot_table/blocks/blue_steel_stairs.json
+d73c492acabf97a6099188c58ed646ec8397653a data/czaplasigmamod/loot_table/blocks/blue_steel_wall.json
 abfd9cc415abf654f81e53223263fe53a4c3f7db data/czaplasigmamod/loot_table/blocks/magic_block.json

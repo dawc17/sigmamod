@@ -52,6 +52,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, BLUE_STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.BLUE_STEEL.get(), 0.25f, 200, "blue_steel");
         oreBlasting(recipeOutput, BLUE_STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.BLUE_STEEL.get(), 0.25f, 100, "blue_steel");
+
+        stairBuilder(ModBlocks.BLUE_STEEL_STAIRS.get(), Ingredient.of(ModItems.BLUE_STEEL)).group("blue_steel")
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STEEL_SLAB.get(), ModItems.BLUE_STEEL.get());
+        buttonBuilder(ModBlocks.BLUE_STEEL_BUTTON.get(), Ingredient.of(ModItems.BLUE_STEEL.get())).group("blue_steel")
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.BLUE_STEEL_PRESSURE_PLATE.get(), ModItems.BLUE_STEEL.get());
+        fenceBuilder(ModBlocks.BLUE_STEEL_FENCE.get(), Ingredient.of(ModItems.BLUE_STEEL.get())).group("blue_steel")
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.BLUE_STEEL_FENCE_GATE.get(), Ingredient.of(ModItems.BLUE_STEEL.get())).group("blue_steel")
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STEEL_WALL.get(), ModItems.BLUE_STEEL.get());
+        doorBuilder(ModBlocks.BLUE_STEEL_DOOR.get(), Ingredient.of(ModItems.BLUE_STEEL.get())).group("blue_steel")
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

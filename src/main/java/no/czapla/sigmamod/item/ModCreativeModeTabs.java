@@ -33,6 +33,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BLUE_STEEL_BLOCK);
                         output.accept(ModBlocks.BLUE_STEEL_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModBlocks.BLUE_STEEL_STAIRS);
+                        output.accept(ModBlocks.BLUE_STEEL_SLAB);
+                        output.accept(ModBlocks.BLUE_STEEL_PRESSURE_PLATE);
+                        output.accept(ModBlocks.BLUE_STEEL_BUTTON);
+                        output.accept(ModBlocks.BLUE_STEEL_FENCE);
+                        output.accept(ModBlocks.BLUE_STEEL_FENCE_GATE);
+                        output.accept(ModBlocks.BLUE_STEEL_WALL);
+                        output.accept(ModBlocks.BLUE_STEEL_DOOR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> SIGMA_MOD_TAB = CREATIVE_MODE_TAB.register("sigma_mod_tab",

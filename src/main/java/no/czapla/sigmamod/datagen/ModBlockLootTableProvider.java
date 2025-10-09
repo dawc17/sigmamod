@@ -14,6 +14,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 import no.czapla.sigmamod.block.ModBlocks;
 import no.czapla.sigmamod.item.ModItems;
 
@@ -31,6 +32,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.BLUE_STEEL_ORE.get(),
                 block -> createOreDrop(ModBlocks.BLUE_STEEL_ORE.get(), ModItems.RAW_BLUE_STEEL.get()));
+
+        add(ModBlocks.BLUE_STEEL_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLUE_STEEL_SLAB.get()));
+
+        dropSelf(ModBlocks.BLUE_STEEL_STAIRS.get());
+        dropSelf(ModBlocks.BLUE_STEEL_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BLUE_STEEL_BUTTON.get());
+        dropSelf(ModBlocks.BLUE_STEEL_FENCE.get());
+        dropSelf(ModBlocks.BLUE_STEEL_FENCE_GATE.get());
+        dropSelf(ModBlocks.BLUE_STEEL_WALL.get());
+
+        add(ModBlocks.BLUE_STEEL_DOOR.get(), block -> createDoorTable(ModBlocks.BLUE_STEEL_DOOR.get()));
     }
 
     // helper method for multiple ore drops
