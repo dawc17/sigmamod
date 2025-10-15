@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.BLUE_STEEL_BLOCK);
                         output.accept(ModBlocks.BLUE_STEEL_ORE);
+                        output.accept(ModBlocks.BLUE_STEEL_STAINED_GLASS);
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModBlocks.BLUE_STEEL_STAIRS);
                         output.accept(ModBlocks.BLUE_STEEL_SLAB);

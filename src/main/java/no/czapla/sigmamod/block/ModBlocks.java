@@ -31,6 +31,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> BLUE_STEEL_STAINED_GLASS = registerBlock("blue_steel_stained_glass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f).sound(SoundType.GLASS).noLootTable()));
+
     public static final DeferredBlock<StairBlock> BLUE_STEEL_STAIRS = registerBlock("blue_steel_stairs",
             () -> new StairBlock(ModBlocks.BLUE_STEEL_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));

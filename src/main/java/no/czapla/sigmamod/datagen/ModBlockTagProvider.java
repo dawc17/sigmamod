@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.BLUE_STEEL_BLOCK.get())
                 .add(ModBlocks.BLUE_STEEL_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.BLUE_STEEL_STAINED_GLASS.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLUE_STEEL_BLOCK.get())
