@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import no.czapla.sigmamod.SigmaMod;
+import no.czapla.sigmamod.block.custom.LuckyBlock;
 import no.czapla.sigmamod.block.custom.MagicBlock;
 import no.czapla.sigmamod.item.ModItems;
 
@@ -19,6 +20,9 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SigmaMod.MOD_ID);
+
+    public static final DeferredBlock<Block> LUCKY_BLOCK = registerBlock("lucky_block",
+            () -> new LuckyBlock(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> BLUE_STEEL_ORE = registerBlock("blue_steel_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()

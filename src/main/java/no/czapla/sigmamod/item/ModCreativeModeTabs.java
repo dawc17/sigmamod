@@ -51,6 +51,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DURIAN);
                         output.accept(ModItems.OIL_CAN);
+                        output.accept(ModBlocks.LUCKY_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

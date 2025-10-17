@@ -20,7 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MAGIC_BLOCK);
         blockWithItem(ModBlocks.BLUE_STEEL_ORE);
         blockWithItem(ModBlocks.BLUE_STEEL_STAINED_GLASS);
-
+        blockWithItem(ModBlocks.LUCKY_BLOCK);
         stairsBlock(ModBlocks.BLUE_STEEL_STAIRS.get(), blockTexture(ModBlocks.BLUE_STEEL_BLOCK.get()));
         slabBlock(ModBlocks.BLUE_STEEL_SLAB.get(), blockTexture(ModBlocks.BLUE_STEEL_BLOCK.get()), blockTexture(ModBlocks.BLUE_STEEL_BLOCK.get()));
         buttonBlock(ModBlocks.BLUE_STEEL_BUTTON.get(), blockTexture(ModBlocks.BLUE_STEEL_BLOCK.get()));

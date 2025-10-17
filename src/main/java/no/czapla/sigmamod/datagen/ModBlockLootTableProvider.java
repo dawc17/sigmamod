@@ -30,6 +30,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLUE_STEEL_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
 
+        add(ModBlocks.LUCKY_BLOCK.get(), noDrop());
+
         add(ModBlocks.BLUE_STEEL_ORE.get(),
                 block -> createOreDrop(ModBlocks.BLUE_STEEL_ORE.get(), ModItems.RAW_BLUE_STEEL.get()));
 

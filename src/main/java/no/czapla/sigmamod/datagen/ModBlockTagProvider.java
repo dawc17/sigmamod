@@ -24,7 +24,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLUE_STEEL_BLOCK.get())
                 .add(ModBlocks.BLUE_STEEL_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get())
-                .add(ModBlocks.BLUE_STEEL_STAINED_GLASS.get());
+                .add(ModBlocks.BLUE_STEEL_STAINED_GLASS.get())
+                .add(ModBlocks.LUCKY_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLUE_STEEL_BLOCK.get())

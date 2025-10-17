@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-10T00:32:55.5018455	Loot Tables
+// 1.21.1	2025-10-17T12:49:09.2557574	Loot Tables
 0d01f891f8b969c55c0d3100a3d3d5c20a4c20da data/czaplasigmamod/loot_table/blocks/blue_steel_block.json
 3095c8f88053e293709cae54c65d58013d4af10d data/czaplasigmamod/loot_table/blocks/blue_steel_button.json
 3310c07214a02c1bac90f912e38377d4b5cc4e92 data/czaplasigmamod/loot_table/blocks/blue_steel_door.json
@@ -9,4 +9,5 @@ a1e503c2396e73968132d6ed8699bb5075f5b9b8 data/czaplasigmamod/loot_table/blocks/b
 8cf1fc76ed81a121ff4d6220fd863bf91745cad8 data/czaplasigmamod/loot_table/blocks/blue_steel_slab.json
 f9fc5a8f5189cdd2cd47f3b534ca74728409286b data/czaplasigmamod/loot_table/blocks/blue_steel_stairs.json
 d73c492acabf97a6099188c58ed646ec8397653a data/czaplasigmamod/loot_table/blocks/blue_steel_wall.json
+985b1d9b7506fa0b8ed8a0beac6f508e34f2a8d0 data/czaplasigmamod/loot_table/blocks/lucky_block.json
 abfd9cc415abf654f81e53223263fe53a4c3f7db data/czaplasigmamod/loot_table/blocks/magic_block.json
