@@ -48,11 +48,11 @@ public class LuckyBlock extends Block {
     private ItemStack getRandomLoot() {
         Item randomItem = ALL_VANILLA_ITEMS.get(RANDOM.nextInt(ALL_VANILLA_ITEMS.size()));
 
-        if (randomItem.getMaxDamage() > 0) {
-            return new ItemStack(randomItem, 1);
-        }
+        //if (randomItem.getMaxDamage() > 0) {
+        //    return new ItemStack(randomItem, 1);
+        //}
 
-        int count = RANDOM.nextInt(5) + 1;
-        return new ItemStack(randomItem, count);
+        //int count = RANDOM.nextInt(5) + 1;
+        return new ItemStack(randomItem, 1);
     }
 }
