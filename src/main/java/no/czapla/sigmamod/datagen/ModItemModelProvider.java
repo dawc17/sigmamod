@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.DURIAN.get());
         basicItem(ModItems.OIL_CAN.get());
+        basicItem(ModItems.LUCKY_COIN.get());
 
         buttonItem(ModBlocks.BLUE_STEEL_BUTTON, ModBlocks.BLUE_STEEL_BLOCK);
         fenceItem(ModBlocks.BLUE_STEEL_FENCE, ModBlocks.BLUE_STEEL_BLOCK);

@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import no.czapla.sigmamod.SigmaMod;
 import no.czapla.sigmamod.item.custom.ChiselItem;
 import no.czapla.sigmamod.item.custom.FuelItem;
+import no.czapla.sigmamod.item.custom.LuckyCoinItem;
 
 import java.util.List;
 
@@ -26,6 +27,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(100)));
+
+    public static final DeferredItem<Item> LUCKY_COIN = ITEMS.register("lucky_coin",
+            () -> new LuckyCoinItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item> DURIAN = ITEMS.register("durian",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DURIAN)){
