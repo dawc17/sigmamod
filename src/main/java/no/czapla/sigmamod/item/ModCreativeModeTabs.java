@@ -23,6 +23,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLUE_STEEL);
                         output.accept(ModItems.RAW_BLUE_STEEL);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.BLUE_STEEL_HELMET);
+                        output.accept(ModItems.BLUE_STEEL_CHESTPLATE);
+                        output.accept(ModItems.BLUE_STEEL_LEGGINGS);
+                        output.accept(ModItems.BLUE_STEEL_BOOTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BLUE_STEEL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("blue_steel_blocks_tab",

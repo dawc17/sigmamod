@@ -4,7 +4,11 @@
   "item.czaplasigmamod.chisel": "Chisel",
   "item.czaplasigmamod.durian": "Durian",
   "item.czaplasigmamod.oil_can": "Oil Can",
-
+  "item.czaplasigmamod.lucky_coin": "Lucky Coin",
+  "item.czaplasigmamod.blue_steel_helmets": "Blue Steel Helmet",
+  "item.czaplasigmamod.blue_steel_chestplate": "Blue Steel Chestplate",
+  "item.czaplasigmamod.blue_steel_leggings": "Blue Steel Leggings",
+  "item.czaplasigmamod.blue_steel_boots": "Blue Steel Boots",
   "block.czaplasigmamod.blue_steel_ore": "Blue Steel Ore",
   "block.czaplasigmamod.blue_steel_block": "Block of Blue Steel",
   "block.czaplasigmamod.magic_block": "Magic Block",
@@ -18,11 +22,9 @@
   "block.czaplasigmamod.blue_steel_door": "Blue Steel Door",
   "block.czaplasigmamod.blue_steel_trapdoor": "Blue Steel Trapdoor",
   "block.czaplasigmamod.lucky_block": "Lucky Block",
-
   "creativetab.czaplasigmamod.blue_steel_items": "Blue Steel Items",
   "creativetab.czaplasigmamod.blue_steel_blocks": "Blue Steel Blocks",
   "creativetab.czaplasigmamod.sigma_mod": "Sigma Mod",
-
   "tooltip.czaplasigmamod.magic_block.shift_down": "This block is imbued with §9magical§r properties.",
   "tooltip.czaplasigmamod.magic_block": "Hold §eSHIFT§r for more information.",
   "tooltip.czaplasigmamod.oil_can.shift_down": "Used to smelt items for a looong time.",
