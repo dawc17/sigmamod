@@ -16,14 +16,21 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.network.PacketDistributor;
 import no.czapla.sigmamod.network.LuckyCoinResultPacket;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
 
 public class LuckyCoinItem extends Item {
+    private static final String MOD_ID = "czaplasigmamod";
+
     public LuckyCoinItem(Properties properties) {
         super(properties);
+    }
+
+    private static List<ResourceLocation> getModItems() {
+        return BuiltInRegistries.ITEM.keySet().stream()
+                .filter(rl -> rl.getNamespace().equals(MOD_ID))
+                .toList();
     }
 
     @Override
@@ -32,7 +39,13 @@ public class LuckyCoinItem extends Item {
 
         if (!level.isClientSide) {
             // Server side - pick random item and send to client for animation
-            List<ResourceLocation> items = new ArrayList<>(BuiltInRegistries.ITEM.keySet());
+            List<ResourceLocation> items = getModItems();
+
+            // Safety check - if no custom items exist, fail
+            if (items.isEmpty()) {
+                return InteractionResultHolder.fail(itemStack);
+            }
+
             Random random = new Random();
 
             ResourceLocation chosen = items.get(random.nextInt(items.size()));
@@ -72,7 +85,7 @@ public class LuckyCoinItem extends Item {
 
     @OnlyIn(Dist.CLIENT)
     public static void startClientRouletteAnimation(ResourceLocation finalItemId) {
-        List<ResourceLocation> items = new ArrayList<>(BuiltInRegistries.ITEM.keySet());
+        List<ResourceLocation> items = getModItems();
         Random random = new Random();
 
         new Thread(() -> {
