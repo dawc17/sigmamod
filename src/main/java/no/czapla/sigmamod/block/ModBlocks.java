@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import no.czapla.sigmamod.SigmaMod;
 import no.czapla.sigmamod.block.custom.LuckyBlock;
 import no.czapla.sigmamod.block.custom.MagicBlock;
+import no.czapla.sigmamod.block.custom.VendingMachineBlock;
 import no.czapla.sigmamod.item.ModItems;
 
 import java.awt.*;
@@ -34,10 +35,6 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> BLUE_STEEL_STAINED_GLASS = registerBlock("blue_steel_stained_glass",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.5f).sound(SoundType.GLASS).noLootTable()));
 
     public static final DeferredBlock<StairBlock> BLUE_STEEL_STAIRS = registerBlock("blue_steel_stairs",
             () -> new StairBlock(ModBlocks.BLUE_STEEL_BLOCK.get().defaultBlockState(),
@@ -63,6 +60,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<DoorBlock> BLUE_STEEL_DOOR = registerBlock("blue_steel_door",
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> VENDING_MACHINE = registerBlock("vending_machine",
+            () -> new VendingMachineBlock(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.METAL).noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

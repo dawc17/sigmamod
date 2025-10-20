@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "czaplasigmamod:block/vending_machine"
+    },
+    "facing=south": {
+      "model": "czaplasigmamod:block/vending_machine",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "czaplasigmamod:block/vending_machine",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "czaplasigmamod:block/vending_machine",
+      "y": 270
+    }
+  }
+}

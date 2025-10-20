@@ -43,6 +43,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLUE_STEEL_FENCE.get());
         dropSelf(ModBlocks.BLUE_STEEL_FENCE_GATE.get());
         dropSelf(ModBlocks.BLUE_STEEL_WALL.get());
+        dropSelf(ModBlocks.VENDING_MACHINE.get());
 
         add(ModBlocks.BLUE_STEEL_DOOR.get(), block -> createDoorTable(ModBlocks.BLUE_STEEL_DOOR.get()));
     }

@@ -53,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.BLUE_STEEL_WALL, ModBlocks.BLUE_STEEL_BLOCK);
 
         basicItem(ModBlocks.BLUE_STEEL_DOOR.asItem());
+        basicItem(ModBlocks.VENDING_MACHINE.asItem());
 
         trimmedArmorItem(ModItems.BLUE_STEEL_BOOTS);
         trimmedArmorItem(ModItems.BLUE_STEEL_LEGGINGS);

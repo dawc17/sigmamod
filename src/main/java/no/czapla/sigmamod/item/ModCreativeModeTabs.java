@@ -36,7 +36,6 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.BLUE_STEEL_BLOCK);
                         output.accept(ModBlocks.BLUE_STEEL_ORE);
-                        output.accept(ModBlocks.BLUE_STEEL_STAINED_GLASS);
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModBlocks.BLUE_STEEL_STAIRS);
                         output.accept(ModBlocks.BLUE_STEEL_SLAB);
@@ -57,6 +56,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OIL_CAN);
                         output.accept(ModBlocks.LUCKY_BLOCK);
                         output.accept(ModItems.LUCKY_COIN);
+                        output.accept(ModBlocks.VENDING_MACHINE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

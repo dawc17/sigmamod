@@ -1,7 +1,7 @@
-// 1.21.1	2025-10-17T12:49:09.2567573	Tags for minecraft:block mod id czaplasigmamod
+// 1.21.1	2025-10-20T14:18:31.852631	Tags for minecraft:block mod id czaplasigmamod
 76d9a3efd3f4d4d7d13546541e3e21f5de651e8f data/minecraft/tags/block/fences.json
 37837e8dae03b276b4113a90866ebb3568e7bc47 data/minecraft/tags/block/fence_gates.json
-b6ad6a7f7cfb4bd5763c0f54b278a38a87b61219 data/minecraft/tags/block/mineable/pickaxe.json
+a6a180af308178ceabb1a5fec424081d65a1c6a7 data/minecraft/tags/block/mineable/pickaxe.json
 7e15aeb66b88b70093a3ed8f5e98df8204ad6bbc data/minecraft/tags/block/needs_diamond_tool.json
 29375af4cd65ba3184daea9f3eb7919e109891da data/minecraft/tags/block/needs_iron_tool.json
 5446ef98dea2e68bcdf8f3260271ad30e2b76ab2 data/minecraft/tags/block/walls.json
