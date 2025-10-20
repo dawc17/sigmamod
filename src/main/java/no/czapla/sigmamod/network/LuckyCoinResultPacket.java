@@ -29,9 +29,6 @@ public record LuckyCoinResultPacket(ResourceLocation itemId) implements CustomPa
     public void handle(IPayloadContext context) {
         context.enqueueWork(() -> {
             Minecraft mc = Minecraft.getInstance();
-            if (mc.player != null) {
-                LuckyCoinItem.startClientRouletteAnimation(itemId);
-            }
         });
     }
 }

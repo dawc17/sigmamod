@@ -33,5 +33,7 @@
   "tooltip.czaplasigmamod.chisel.shift_down": "This item can chisel blocks into other blocks.",
   "tooltip.czaplasigmamod.chisel": "Hold §eSHIFT§r for more information.",
   "tooltip.czaplasigmamod.durian.shift_down": "Smells like hell, but tastes like heaven. Small chance of poisoning.",
-  "tooltip.czaplasigmamod.durian": "Hold §eSHIFT§r for more information."
+  "tooltip.czaplasigmamod.durian": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.lucky_coin.shift_down": "A coin that brings §6§oluck§r to its user.",
+  "tooltip.czaplasigmamod.lucky_coin": "Hold §eSHIFT§r for more information."
 }

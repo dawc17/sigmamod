@@ -29,7 +29,17 @@ public class ModItems {
             () -> new ChiselItem(new Item.Properties().durability(100)));
 
     public static final DeferredItem<Item> LUCKY_COIN = ITEMS.register("lucky_coin",
-            () -> new LuckyCoinItem(new Item.Properties().stacksTo(1)));
+            () -> new LuckyCoinItem(new Item.Properties().stacksTo(64)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (Screen.hasShiftDown()) {
+                        tooltipComponents.add(Component.translatable("tooltip.czaplasigmamod.lucky_coin.shift_down"));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.czaplasigmamod.lucky_coin"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> DURIAN = ITEMS.register("durian",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DURIAN)){
