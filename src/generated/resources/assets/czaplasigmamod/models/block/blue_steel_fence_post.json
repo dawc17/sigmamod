@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "czaplasigmamod:block/blue_steel_block"
+  }
+}

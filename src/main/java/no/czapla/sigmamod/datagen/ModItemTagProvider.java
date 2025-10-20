@@ -3,6 +3,7 @@ package no.czapla.sigmamod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -24,5 +25,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RAW_BLUE_STEEL.get())
                 .add(Items.COAL)
                 .add(Items.CHARCOAL);
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BLUE_STEEL_CHESTPLATE.get())
+                .add(ModItems.BLUE_STEEL_HELMET.get())
+                .add(ModItems.BLUE_STEEL_LEGGINGS.get())
+                .add(ModItems.BLUE_STEEL_BOOTS.get());
     }
 }

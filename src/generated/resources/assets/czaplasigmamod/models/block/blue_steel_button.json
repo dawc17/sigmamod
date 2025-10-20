@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "czaplasigmamod:block/blue_steel_block"
+  }
+}

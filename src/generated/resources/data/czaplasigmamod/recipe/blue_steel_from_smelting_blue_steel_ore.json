@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "blue_steel",
+  "ingredient": {
+    "item": "czaplasigmamod:blue_steel_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "czaplasigmamod:blue_steel"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "blue_steel",
+  "ingredients": [
+    {
+      "item": "czaplasigmamod:blue_steel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "czaplasigmamod:blue_steel_button"
+  }
+}

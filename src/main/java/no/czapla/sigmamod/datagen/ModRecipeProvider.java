@@ -39,6 +39,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BLUE_STEEL_HELMET.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .define('B', ModItems.BLUE_STEEL.get())
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BLUE_STEEL_CHESTPLATE.get())
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.BLUE_STEEL.get())
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BLUE_STEEL_LEGGINGS.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.BLUE_STEEL.get())
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BLUE_STEEL_BOOTS.get())
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.BLUE_STEEL.get())
+                .unlockedBy("has_blue_steel", has(ModItems.BLUE_STEEL)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLUE_STEEL.get(), 9)
                 .requires(ModBlocks.BLUE_STEEL_BLOCK.get())
                 .unlockedBy("has_blue_steel_block", has(ModBlocks.BLUE_STEEL_BLOCK)).save(recipeOutput);

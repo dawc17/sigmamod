@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "czaplasigmamod:block/blue_steel_block"
+  }
+}

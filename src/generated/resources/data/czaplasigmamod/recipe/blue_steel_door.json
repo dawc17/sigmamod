@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "blue_steel",
+  "key": {
+    "#": {
+      "item": "czaplasigmamod:blue_steel"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "czaplasigmamod:blue_steel_door"
+  }
+}
