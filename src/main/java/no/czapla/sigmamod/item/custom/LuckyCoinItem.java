@@ -1,67 +1,62 @@
 package no.czapla.sigmamod.item.custom;
 
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.registries.DeferredItem;
+import no.czapla.sigmamod.block.ModBlocks;
+import no.czapla.sigmamod.item.ModItems;
 
 import java.util.List;
 import java.util.Random;
 
 public class LuckyCoinItem extends Item {
-    private static final String MOD_ID = "czaplasigmamod";
+    private static final Random RANDOM = new Random();
+    private static final List<DeferredItem<Item>> MONSTER_CANS = List.of(
+            ModItems.MONSTER_CAN,
+            ModItems.WHITE_MONSTER_CAN
+    );
 
     public LuckyCoinItem(Properties properties) {
         super(properties);
     }
 
-    private static List<ResourceLocation> getModItems() {
-        return BuiltInRegistries.ITEM.keySet().stream()
-                .filter(rl -> rl.getNamespace().equals(MOD_ID))
-                .toList();
-    }
-
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        ItemStack itemStack = player.getItemInHand(hand);
+    public InteractionResult useOn(UseOnContext context) {
+        Level level = context.getLevel();
+        Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
 
-        if (!level.isClientSide) {
-            // Server side - pick random item and give it instantly
-            List<ResourceLocation> items = getModItems();
+        // Check if the clicked block is a vending machine
+        if (clickedBlock == ModBlocks.VENDING_MACHINE.get()) {
+            if (!level.isClientSide()) {
+                Player player = context.getPlayer();
+                ItemStack itemStack = context.getItemInHand();
 
-            // Safety check - if no custom items exist, fail
-            if (items.isEmpty()) {
-                return InteractionResultHolder.fail(itemStack);
+                // Randomly select a monster can
+                DeferredItem<Item> randomMonsterCan = MONSTER_CANS.get(RANDOM.nextInt(MONSTER_CANS.size()));
+                ItemStack monsterCan = new ItemStack(randomMonsterCan.get());
+
+                if (!player.addItem(monsterCan)) {
+                    player.drop(monsterCan, false);
+                }
+
+                // Play sound effect
+                level.playSound(null, context.getClickedPos(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 1.0f, 1.0f);
+
+                // Consume the lucky coin
+                itemStack.consume(1, player);
             }
 
-            Random random = new Random();
-
-            ResourceLocation chosen = items.get(random.nextInt(items.size()));
-            Item chosenItem = BuiltInRegistries.ITEM.get(chosen);
-
-            // Give the item to the player
-            ItemStack reward = new ItemStack(chosenItem);
-            if (!player.addItem(reward)) {
-                player.drop(reward, false);
-            }
-
-            // Play sound effect
-            level.playSound(null, player.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 1.0f, 1.0f);
-
-            // Send message to player
-            player.displayClientMessage(Component.literal("You got: " + chosenItem.getDescription().getString() + "!"), false);
-
-            // Consume the lucky coin
-            itemStack.shrink(1);
+            return InteractionResult.SUCCESS;
         }
 
-        return InteractionResultHolder.success(itemStack);
+        return InteractionResult.PASS;
     }
 }

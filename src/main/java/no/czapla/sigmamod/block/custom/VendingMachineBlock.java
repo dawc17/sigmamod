@@ -127,4 +127,5 @@ public class VendingMachineBlock extends HorizontalDirectionalBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, HALF);
     }
+    
 }

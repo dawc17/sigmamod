@@ -9,6 +9,8 @@
   "item.czaplasigmamod.blue_steel_chestplate": "Blue Steel Chestplate",
   "item.czaplasigmamod.blue_steel_leggings": "Blue Steel Leggings",
   "item.czaplasigmamod.blue_steel_boots": "Blue Steel Boots",
+  "item.czaplasigmamod.monster_can": "Monster Energy Original",
+  "item.czaplasigmamod.white_monster_can": "Monster Energy Ultra White",
   "block.czaplasigmamod.blue_steel_ore": "Blue Steel Ore",
   "block.czaplasigmamod.blue_steel_block": "Block of Blue Steel",
   "block.czaplasigmamod.magic_block": "Magic Block",
@@ -35,5 +37,9 @@
   "tooltip.czaplasigmamod.durian.shift_down": "Smells like hell, but tastes like heaven. Small chance of poisoning.",
   "tooltip.czaplasigmamod.durian": "Hold §eSHIFT§r for more information.",
   "tooltip.czaplasigmamod.lucky_coin.shift_down": "A coin that brings §6§oluck§r to its user.",
-  "tooltip.czaplasigmamod.lucky_coin": "Hold §eSHIFT§r for more information."
+  "tooltip.czaplasigmamod.lucky_coin": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.monster_can.shift_down": "Makes you speedy.",
+  "tooltip.czaplasigmamod.monster_can": "Hold §eSHIFT§r for more information.",
+  "tooltip.czaplasigmamod.white_monster_can.shift_down": "Makes you strong.",
+  "tooltip.czaplasigmamod.white_monster_can": "Hold §eSHIFT§r for more information."
 }

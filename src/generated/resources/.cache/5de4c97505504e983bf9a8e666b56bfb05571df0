@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-20T14:54:10.3527514	Item Models: czaplasigmamod
+// 1.21.1	2025-10-21T15:05:13.1841735	Item Models: czaplasigmamod
 ea2a1bf242f0d24da53d8fce9689263203fa8238 assets/czaplasigmamod/models/item/blue_steel.json
 9ae18ec495eaff34f062324dbb9ae74f5fd5ace4 assets/czaplasigmamod/models/item/blue_steel_boots.json
 12b489b1ec6c9ccebf1ce3c4185ed6fccdd02876 assets/czaplasigmamod/models/item/blue_steel_boots_amethyst_trim.json
@@ -51,6 +51,8 @@ c1c5b67981be2e9790f1c9c8cc8b3cac22e3b06e assets/czaplasigmamod/models/item/blue_
 1f9640d02fd03bbb299eed23ea4046bf6f4cb9b9 assets/czaplasigmamod/models/item/chisel.json
 ddd695383fbe84526fd0c390262027c257c5fa15 assets/czaplasigmamod/models/item/durian.json
 4205007853b71b656e0a6d62103d234576e17c45 assets/czaplasigmamod/models/item/lucky_coin.json
+fa701435372870b7d39a5e73f058b8ebb2d45b41 assets/czaplasigmamod/models/item/monster_can.json
 fde364ae89b03494269a8c9053bca69775a44ded assets/czaplasigmamod/models/item/oil_can.json
 ea7f57650f79221d8886f4871e2a0ba12a50931c assets/czaplasigmamod/models/item/raw_blue_steel.json
 d0cf65f507412a8b473319b0d4c7e54903fbb7d3 assets/czaplasigmamod/models/item/vending_machine.json
+1fd7c31ae6276bb95c81a5fbdd4a765c509fec56 assets/czaplasigmamod/models/item/white_monster_can.json

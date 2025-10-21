@@ -57,6 +57,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUCKY_BLOCK);
                         output.accept(ModItems.LUCKY_COIN);
                         output.accept(ModBlocks.VENDING_MACHINE);
+                        output.accept(ModItems.MONSTER_CAN);
+                        output.accept(ModItems.WHITE_MONSTER_CAN);
                     }).build());
 
     public static void register(IEventBus eventBus) {
