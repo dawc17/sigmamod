@@ -7,5 +7,7 @@ so far ive added:
 - a chisel that only works on some blocks lol
 - a magic block that turns coal into diamonds when you throw coal on top of it
 - an oil can that can smelt a lot of items
+- blue steel armor
+- monster energy vending machine
 - more tbd
 ## k thx bye
