@@ -97,6 +97,19 @@ public class ModItems {
                 }
             });
 
+    public static final DeferredItem<Item> MANGO_MONSTER_CAN = ITEMS.register("mango_monster_can",
+            () -> new MonsterCanItem(new Item.Properties().stacksTo(16).food(ModFoodProperties.MANGO_MONSTER_CAN)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (Screen.hasShiftDown()) {
+                        tooltipComponents.add(Component.translatable("tooltip.czaplasigmamod.mango_monster_can.shift_down"));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.czaplasigmamod.mango_monster_can"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     public static final DeferredItem<Item> DURIAN = ITEMS.register("durian",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DURIAN)){
                 @Override

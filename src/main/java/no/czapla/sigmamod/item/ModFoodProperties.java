@@ -13,4 +13,7 @@ public class ModFoodProperties {
 
     public static final FoodProperties WHITE_MONSTER_CAN = new FoodProperties.Builder()
             .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 2), 1.0f).alwaysEdible().build();
+
+    public static final FoodProperties MANGO_MONSTER_CAN = new FoodProperties.Builder()
+            .effect(()-> new MobEffectInstance(MobEffects.JUMP, 300, 2), 1.0f).alwaysEdible().build();
 }

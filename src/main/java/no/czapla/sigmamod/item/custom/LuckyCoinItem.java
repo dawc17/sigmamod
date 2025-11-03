@@ -22,6 +22,7 @@ public class LuckyCoinItem extends Item {
     private static final List<DeferredItem<Item>> MONSTER_CANS = List.of(
             ModItems.MONSTER_CAN,
             ModItems.WHITE_MONSTER_CAN
+            , ModItems.MANGO_MONSTER_CAN
     );
 
     public LuckyCoinItem(Properties properties) {
