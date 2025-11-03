@@ -63,8 +63,10 @@ public class VendingMachineBlock extends HorizontalDirectionalBlock {
 
     @Override
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
-        // Place the upper half
-        level.setBlock(pos.above(), state.setValue(HALF, DoubleBlockHalf.UPPER), 3);
+                // Place the upper half only if within build height
+        if (pos.getY() < level.getMaxBuildHeight() - 1) {
+            level.setBlock(pos.above(), state.setValue(HALF, DoubleBlockHalf.UPPER), 3);
+        }
     }
 
     @Override
